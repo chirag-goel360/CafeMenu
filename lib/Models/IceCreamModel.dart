@@ -3,5 +3,10 @@ class IceCreamDataModel{
   final String title;
   final int price;
   final String information;
-  IceCreamDataModel(this.image, this.title, this.price, this.information);
+  IceCreamDataModel(
+      this.image,
+      this.title,
+      this.price,
+      this.information,
+      );
 }

@@ -14,8 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   {
     super.initState();
     Future.delayed(Duration(seconds: 5),(){
-      Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context) => HomeScreen()));
+      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => HomeScreen()));
     }
     );
   }
@@ -48,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   height: 4,
                   width: 200,
                   decoration: BoxDecoration(
-                      color: Colors.black
+                    color: Colors.black,
                   ),
                 ),
                 Text("Coffee Shop",
