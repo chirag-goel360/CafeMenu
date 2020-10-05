@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class DetailPage extends StatefulWidget {
   final String img;
   final String title;
-  const DetailPage({Key key, this.img, this.title}) : super(key: key);
+  final int price;
+  final String info;
+  const DetailPage({Key key, this.img, this.title, this.price, this.info}) : super(key: key);
 
   @override
   _DetailPageState createState() => _DetailPageState();
@@ -186,7 +188,7 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               ),
               Text(
-                "260",
+                widget.price.toString(),
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.black87,
@@ -211,7 +213,7 @@ class _DetailPageState extends State<DetailPage> {
             height: 10,
           ),
           Text(
-            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+            widget.info,
             style: TextStyle(
               fontSize: 14,
             ),

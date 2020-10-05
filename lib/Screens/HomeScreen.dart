@@ -1,3 +1,4 @@
+import 'package:coffee_shop/Models/CakeModel.dart';
 import 'package:coffee_shop/Models/CoffeeModel.dart';
 import 'package:coffee_shop/Screens/Details.dart';
 import 'package:flip_box_bar/flip_box_bar.dart';
@@ -11,10 +12,13 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<CoffeeDataModel> coffeedata = [
-    CoffeeDataModel("assets/Coffee/Con panna.jpg", "Espresso",3,"abd"),
-    CoffeeDataModel("assets/Coffee/Flat white.jpg","Cappuccino",4,"ddd"),
-    CoffeeDataModel("assets/Coffee/Mocha.jpg","latte",6,"ff"),
-    CoffeeDataModel("assets/Coffee/Vienna.jpg","Macciato",8,"g"),
+    CoffeeDataModel("assets/Coffee/Con panna.jpg", "Con Panna",300,"The Espresso con Panna means espresso with cream in Italian. Before baristas everywhere were putting whipped cream on lattes, Espresso con Panna was served in Europe with real whipped cream on an espresso shot in a demitasse. This drink is also popular in France and Budapest. We would recommend this drink for quite times and a good book. This simple Espresso Con Panna recipe will add some sweetness and energy to your day. Enjoy this italian-inspired drink on a break or weekend."),
+    CoffeeDataModel("assets/Coffee/Flat white.jpg","Flat White",200,"A flat white is an espresso drink made with a shot of espresso and two shots of steamed milk. It takes a little bit of skill to prepare, but once you've mastered this recipe, it's easy to make flat white espresso drinks again and again."),
+    CoffeeDataModel("assets/Coffee/Mocha.jpg","Mocha",250,"All you need is a cup of hot coffee to cheer up your mood. Be it a date or some casual outing with friends, a steaming cup of coffee is a must-have. Mocha or mochaccino is a popular coffee type which is loved by people of all age groups. It is named after the city of Mocha in Yemen. It has a chocolate flavour which makes it so delicious."),
+    CoffeeDataModel("assets/Coffee/Vienna.jpg","Vienna",280,"Vienna Coffee is the name of a popular traditional cream-based coffee beverage. It is made by preparing two shots of strong black espresso in a standard sized coffee cup and infusing the coffee with whipped cream (as a replacement for milk and sugar) until the cup is full. Then the cream is twirled and optionally topped off with chocolate sprinklings. The coffee is drunk through the creamy top."),
+  ];
+  final List<CakeDataModel> cakedata = [
+
   ];
   int selectedIndex = 0;
   @override
@@ -123,7 +127,14 @@ class _HomeScreenState extends State<HomeScreen> {
       itemBuilder: (BuildContext context,int index) {
         return InkWell(
           onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPage(title: coffeedata[index].title,img: coffeedata[index].image,),));
+            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPage(
+              title: coffeedata[index].title,
+              img: coffeedata[index].image,
+              price: coffeedata[index].price,
+              info: coffeedata[index].information,
+              ),
+              ),
+              );
           },
           child: Card(
             shape: RoundedRectangleBorder(
