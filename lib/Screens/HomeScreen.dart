@@ -1,6 +1,7 @@
 import 'package:coffee_shop/Models/CakeModel.dart';
 import 'package:coffee_shop/Models/CoffeeModel.dart';
-import 'package:coffee_shop/Screens/Details.dart';
+import 'package:coffee_shop/Screens/DetailsCake.dart';
+import 'package:coffee_shop/Screens/DetailsCoffee.dart';
 import 'package:flip_box_bar/flip_box_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -18,7 +19,13 @@ class _HomeScreenState extends State<HomeScreen> {
     CoffeeDataModel("assets/Coffee/Vienna.jpg","Vienna",280,"Vienna Coffee is the name of a popular traditional cream-based coffee beverage. It is made by preparing two shots of strong black espresso in a standard sized coffee cup and infusing the coffee with whipped cream (as a replacement for milk and sugar) until the cup is full. Then the cream is twirled and optionally topped off with chocolate sprinklings. The coffee is drunk through the creamy top."),
   ];
   final List<CakeDataModel> cakedata = [
-
+    CakeDataModel("assets/Cake/BlueBerry.jpg","Blue Berry CupCake",50,"Bursting with fresh blueberries with a tender crumb and sparkling sugar crust, these really are the best blueberry muffins.These blueberry cupcakes are breakfast for dessert. Fresh blueberries are mixed into vanilla cake -- rather than muffin -- batter, which is then topped with cinnamon streusel and swirls of blueberry-cream cheese icing."),
+    CakeDataModel("assets/Cake/Chocolate.jpg","Chocolate CupCake",50,"These Moist Chocolate Cupcakes are completely from scratch & full of chocolate flavor! The cupcake is so moist, it melts in your mouth and the frosting is made with real melted chocolate for a silky smooth, super chocolatey frosting you won’t want to stop eating!"),
+    CakeDataModel("assets/Cake/ChocolateSwiss.jpg","Chocolate Swiss Roll",70,"This Chocolate Swiss Roll is a rich, chocolaty and decadent dessert, a rewarding treat for  chocolate lovers. A chocolate sponge cake is filled with a chocolate mousse filling and drizzled with chocolate ganache on top. It is simply heavenly delicious."),
+    CakeDataModel("assets/Cake/Mango.jpg","Mango CupCake",50,"These amazing cupcakes combine the flavors of mango and coconut for a tropical flair. The buttercream frosting is made with a fresh mango reduction for a superb taste of mango. The vanilla cupcake is moist, rich, and buttery with a hint of coconut."),
+    CakeDataModel("assets/Cake/Strawberry.jpg","Strawberry CupCake",50,"These Strawberry Cupcakes are made with chunks of fresh strawberries in the cake batter and are topped with a luscious pink Strawberry Buttercream Frosting. These cupcakes are just bursting with flavor and would go down a treat at any celebration!"),
+    CakeDataModel("assets/Cake/StrawberrySwiss.jpg","Strawberry Swiss Roll",70,"Roll into strawberry season with this gorgeous strawberry cake roll: a delicate almond sponge cake decorated with a cute strawberry design and filled with strawberry whipped cream. The Japanese are really on to something with these patterned cake rolls. They are as impressive to behold as they are delicious to eat, and are arguably much easier and less time-intensive than fancy frosted layer cakes."),
+    CakeDataModel("assets/Cake/VanillaChocoChip.jpg","Vanilla Chocolate Chip CupCake",60,"A Vanilla Cupcake with chocochips on the top is heaven for chocolate lovers. These cakes are made with lots of love and care for  our Customers."),
   ];
   int selectedIndex = 0;
   @override
@@ -30,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child = _listWidgetCoffee();
         break;
       case 1:
-        child =  Text("hello1");
+        child =  _listWidgetCake();
         break;
       case 2:
         child =  Text("hello2");
@@ -127,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
       itemBuilder: (BuildContext context,int index) {
         return InkWell(
           onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPage(
+            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageCoffee(
               title: coffeedata[index].title,
               img: coffeedata[index].image,
               price: coffeedata[index].price,
@@ -159,6 +166,61 @@ class _HomeScreenState extends State<HomeScreen> {
                     Container(
                       child: Text(
                         coffeedata[index].title,
+                        style: TextStyle(
+                            fontSize: 16
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Icon(
+                  Icons.arrow_forward_ios,
+                )
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+  _listWidgetCake() {
+    return ListView.builder(
+      itemCount: cakedata.length,
+      itemBuilder: (BuildContext context,int index) {
+        return InkWell(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageCake(
+              title: cakedata[index].title,
+              img: cakedata[index].image,
+              price: cakedata[index].price,
+              info: cakedata[index].information,
+              ),
+              ),
+              );
+          },
+          child: Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            elevation: 5,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Container(
+                      height: 90,
+                      width: 90,
+                      child: Image.asset(
+                        cakedata[index].image,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      child: Text(
+                        cakedata[index].title,
                         style: TextStyle(
                             fontSize: 16
                         ),

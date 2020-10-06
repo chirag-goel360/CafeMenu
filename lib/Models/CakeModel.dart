@@ -1,7 +1,7 @@
 class CakeDataModel{
   final String image;
   final String title;
-  final String price;
+  final int price;
   final String information;
   CakeDataModel(
       this.image,

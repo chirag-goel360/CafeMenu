@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class DetailPage extends StatefulWidget {
+class DetailPageCoffee extends StatefulWidget {
   final String img;
   final String title;
   final int price;
   final String info;
-  const DetailPage({Key key, this.img, this.title, this.price, this.info}) : super(key: key);
+  const DetailPageCoffee({Key key, this.img, this.title, this.price, this.info}) : super(key: key);
 
   @override
-  _DetailPageState createState() => _DetailPageState();
+  _DetailPageCoffeeState createState() => _DetailPageCoffeeState();
 }
 
-class _DetailPageState extends State<DetailPage> {
+class _DetailPageCoffeeState extends State<DetailPageCoffee> {
   int count = 0;
   int _selectedSize = 0;
 
@@ -215,7 +215,7 @@ class _DetailPageState extends State<DetailPage> {
           Text(
             widget.info,
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 16,
             ),
           ),
         ],
