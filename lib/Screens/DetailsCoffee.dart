@@ -55,7 +55,7 @@ class _DetailPageCoffeeState extends State<DetailPageCoffee> {
   }
   _headerWidget() {
     return SafeArea(
-          child: Container(
+      child: Container(
         height: 250,
         width: double.infinity,
         child: Stack(
@@ -69,7 +69,7 @@ class _DetailPageCoffeeState extends State<DetailPageCoffee> {
                     bottomRight: Radius.circular(10)
                 ),
                 child: Image.asset(
-                 widget.img,
+                  widget.img,
                   fit: BoxFit.fill,
                 ),
               ),

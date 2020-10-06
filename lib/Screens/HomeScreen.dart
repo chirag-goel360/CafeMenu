@@ -139,9 +139,9 @@ class _HomeScreenState extends State<HomeScreen> {
               img: coffeedata[index].image,
               price: coffeedata[index].price,
               info: coffeedata[index].information,
-              ),
-              ),
-              );
+            ),
+            ),
+            );
           },
           child: Card(
             shape: RoundedRectangleBorder(
@@ -194,9 +194,9 @@ class _HomeScreenState extends State<HomeScreen> {
               img: cakedata[index].image,
               price: cakedata[index].price,
               info: cakedata[index].information,
-              ),
-              ),
-              );
+            ),
+            ),
+            );
           },
           child: Card(
             shape: RoundedRectangleBorder(

@@ -55,7 +55,7 @@ class _DetailPageCakeState extends State<DetailPageCake> {
   }
   _headerWidget() {
     return SafeArea(
-          child: Container(
+      child: Container(
         height: 250,
         width: double.infinity,
         child: Stack(
@@ -69,7 +69,7 @@ class _DetailPageCakeState extends State<DetailPageCake> {
                     bottomRight: Radius.circular(10)
                 ),
                 child: Image.asset(
-                 widget.img,
+                  widget.img,
                   fit: BoxFit.fill,
                 ),
               ),
