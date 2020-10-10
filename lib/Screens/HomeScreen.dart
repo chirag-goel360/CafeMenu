@@ -1,7 +1,9 @@
 import 'package:coffee_shop/Models/CakeModel.dart';
 import 'package:coffee_shop/Models/CoffeeModel.dart';
+import 'package:coffee_shop/Models/IceCreamModel.dart';
 import 'package:coffee_shop/Screens/DetailsCake.dart';
 import 'package:coffee_shop/Screens/DetailsCoffee.dart';
+import 'package:coffee_shop/Screens/DetailsIceCream.dart';
 import 'package:flip_box_bar/flip_box_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -27,6 +29,16 @@ class _HomeScreenState extends State<HomeScreen> {
     CakeDataModel("assets/Cake/StrawberrySwiss.jpg","Strawberry Swiss Roll",70,"Roll into strawberry season with this gorgeous strawberry cake roll: a delicate almond sponge cake decorated with a cute strawberry design and filled with strawberry whipped cream. The Japanese are really on to something with these patterned cake rolls. They are as impressive to behold as they are delicious to eat, and are arguably much easier and less time-intensive than fancy frosted layer cakes."),
     CakeDataModel("assets/Cake/VanillaChocoChip.jpg","Vanilla Chocolate Chip CupCake",60,"A Vanilla Cupcake with chocochips on the top is heaven for chocolate lovers. These cakes are made with lots of love and care for  our Customers."),
   ];
+  final List<IceCreamDataModel> icecreamdata = [
+    IceCreamDataModel("assets/IceCream/chocolate.jpg","",4,""),
+    IceCreamDataModel("assets/IceCream/doublescoopchocolate.jpg","",4,""),
+    IceCreamDataModel("assets/IceCream/fruityscoop.jpg","",4,""),
+    IceCreamDataModel("assets/IceCream/singlescoopchocolate.jpg","",4,""),
+    IceCreamDataModel("assets/IceCream/strawberry.jpg","",4,""),
+    IceCreamDataModel("assets/IceCream/supersunday.jpg","",4,""),
+    IceCreamDataModel("assets/IceCream/vanilla.jpg","",4,""),
+    IceCreamDataModel("assets/IceCream/vanillascoop.jpg","",4,""),
+  ];
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -40,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child =  _listWidgetCake();
         break;
       case 2:
-        child =  Text("hello2");
+        child =  _listWidgetIceCream();
         break;
       case 3:
         child =  Text("hello3");
@@ -166,6 +178,61 @@ class _HomeScreenState extends State<HomeScreen> {
                     Container(
                       child: Text(
                         coffeedata[index].title,
+                        style: TextStyle(
+                            fontSize: 16
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Icon(
+                  Icons.arrow_forward_ios,
+                )
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+  _listWidgetIceCream() {
+    return ListView.builder(
+      itemCount: icecreamdata.length,
+      itemBuilder: (BuildContext context,int index) {
+        return InkWell(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageIceCream(
+              title: icecreamdata[index].title,
+              img: icecreamdata[index].image,
+              price: icecreamdata[index].price,
+              info: icecreamdata[index].information,
+            ),
+            ),
+            );
+          },
+          child: Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            elevation: 5,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Container(
+                      height: 90,
+                      width: 90,
+                      child: Image.asset(
+                        icecreamdata[index].image,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      child: Text(
+                        icecreamdata[index].title,
                         style: TextStyle(
                             fontSize: 16
                         ),
