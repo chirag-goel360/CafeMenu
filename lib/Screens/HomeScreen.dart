@@ -30,14 +30,14 @@ class _HomeScreenState extends State<HomeScreen> {
     CakeDataModel("assets/Cake/VanillaChocoChip.jpg","Vanilla Chocolate Chip CupCake",60,"A Vanilla Cupcake with chocochips on the top is heaven for chocolate lovers. These cakes are made with lots of love and care for  our Customers."),
   ];
   final List<IceCreamDataModel> icecreamdata = [
-    IceCreamDataModel("assets/IceCream/chocolate.jpg","",4,""),
-    IceCreamDataModel("assets/IceCream/doublescoopchocolate.jpg","",4,""),
-    IceCreamDataModel("assets/IceCream/fruityscoop.jpg","",4,""),
-    IceCreamDataModel("assets/IceCream/singlescoopchocolate.jpg","",4,""),
-    IceCreamDataModel("assets/IceCream/strawberry.jpg","",4,""),
-    IceCreamDataModel("assets/IceCream/supersunday.jpg","",4,""),
-    IceCreamDataModel("assets/IceCream/vanilla.jpg","",4,""),
-    IceCreamDataModel("assets/IceCream/vanillascoop.jpg","",4,""),
+    IceCreamDataModel("assets/IceCream/chocolate.jpg","Chocolate Ice-Cream",30,"This chocolate ice cream is irresistibly creamy and made with two forms of chocolate for a deep rich flavor. It’s not overly sweet, and is just as delicious (maybe even more-so) than your favorite ice cream."),
+    IceCreamDataModel("assets/IceCream/doublescoopchocolate.jpg","Double Chocolate Scoop",70,""),
+    IceCreamDataModel("assets/IceCream/fruityscoop.jpg","Fruity Scoop",80,""),
+    IceCreamDataModel("assets/IceCream/singlescoopchocolate.jpg","Single Chocolate Scoop",50,""),
+    IceCreamDataModel("assets/IceCream/strawberry.jpg","Strawberry Ice-Cream",30,""),
+    IceCreamDataModel("assets/IceCream/supersunday.jpg","Super Special Sunday",90,""),
+    IceCreamDataModel("assets/IceCream/vanilla.jpg","Vanilla Ice-Cream",25,""),
+    IceCreamDataModel("assets/IceCream/vanillascoop.jpg","Vanilla Scoop",75,""),
   ];
   int selectedIndex = 0;
   @override

@@ -43,7 +43,7 @@ class _DetailPageCakeState extends State<DetailPageCake> {
                   "Add to cart",
                   style: TextStyle(
                     fontSize: 18,
-                    color: Colors.white,
+                    color: Colors.purpleAccent,
                   ),
                 ),
               ),
