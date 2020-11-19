@@ -3,6 +3,7 @@ class CakeDataModel{
   final String title;
   final int price;
   final String information;
+
   CakeDataModel(
       this.image,
       this.title,

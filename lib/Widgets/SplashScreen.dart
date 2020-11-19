@@ -9,15 +9,23 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+
   @override
   void initState()
   {
     super.initState();
-    Future.delayed(Duration(seconds: 5),(){
-      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => HomeScreen()));
-    }
+    Future.delayed(
+      Duration(
+        seconds: 5,
+      ),
+          (){
+        Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => HomeScreen(),
+        ),
+        );
+      },
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,12 +44,12 @@ class _SplashScreenState extends State<SplashScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                    width: 180,
-                    height: 180,
-                    child: FlareActor(
-                      'assets/CoffeMachine.flr',
-                      animation:"loading",
-                    )
+                  width: 180,
+                  height: 180,
+                  child: FlareActor(
+                    'assets/CoffeMachine.flr',
+                    animation:"loading",
+                  ),
                 ),
                 Container(
                   height: 4,
@@ -50,7 +58,8 @@ class _SplashScreenState extends State<SplashScreen> {
                     color: Colors.black,
                   ),
                 ),
-                Text("Coffee Shop",
+                Text(
+                  "Coffee Shop",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 20,
@@ -59,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

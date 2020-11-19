@@ -3,6 +3,7 @@ class IceCreamDataModel{
   final String title;
   final int price;
   final String information;
+
   IceCreamDataModel(
       this.image,
       this.title,

@@ -31,12 +31,12 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
                   vertical: 10,
                 ),
                 padding: EdgeInsets.symmetric(
-                    horizontal: 40,
-                    vertical: 10
+                  horizontal: 40,
+                  vertical: 10,
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(
-                      Radius.circular(10)
+                    Radius.circular(10),
                   ),
                 ),
                 child: Text(
@@ -53,6 +53,7 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
       ),
     );
   }
+
   _headerWidget() {
     return SafeArea(
       child: Container(
@@ -65,8 +66,8 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
               width: double.infinity,
               child: ClipRRect(
                 borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(10),
-                    bottomRight: Radius.circular(10)
+                  bottomLeft: Radius.circular(10),
+                  bottomRight: Radius.circular(10),
                 ),
                 child: Image.asset(
                   widget.img,
@@ -81,10 +82,12 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     InkWell(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        child: Icon(Icons.arrow_back_ios)
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Icon(
+                        Icons.arrow_back_ios,
+                      ),
                     ),
                   ],
                 ),
@@ -130,8 +133,8 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
                           decoration: BoxDecoration(
                             color: Colors.blueAccent,
                             borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(15),
-                                bottomLeft: Radius.circular(15)
+                              topLeft: Radius.circular(15),
+                              bottomLeft: Radius.circular(15),
                             ),
                           ),
                           child: Icon(
@@ -163,8 +166,8 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
                           decoration: BoxDecoration(
                             color: Colors.blueAccent,
                             borderRadius: BorderRadius.only(
-                                topRight: Radius.circular(15),
-                                bottomRight: Radius.circular(15)
+                              topRight: Radius.circular(15),
+                              bottomRight: Radius.circular(15),
                             ),
                           ),
                           child: Icon(
@@ -175,7 +178,7 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
                       ),
                     ],
                   ),
-                )
+                ),
               ],
             ),
           ),
@@ -222,6 +225,7 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
       ),
     );
   }
+
   Widget _selectSizeWidget() {
     return Row(
       children: <Widget>[

@@ -3,6 +3,7 @@ class FastFoodDataModel{
   final String title;
   final int price;
   final String information;
+
   FastFoodDataModel(
       this.image,
       this.title,

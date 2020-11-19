@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
     IceCreamDataModel("assets/IceCream/vanillascoop.jpg","Vanilla Scoop",75,""),
   ];
   int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     Widget child;
@@ -179,7 +180,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Text(
                         coffeedata[index].title,
                         style: TextStyle(
-                            fontSize: 16
+                          fontSize: 16,
                         ),
                       ),
                     ),
@@ -187,7 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Icon(
                   Icons.arrow_forward_ios,
-                )
+                ),
               ],
             ),
           ),
@@ -195,6 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     );
   }
+
   _listWidgetIceCream() {
     return ListView.builder(
       itemCount: icecreamdata.length,
@@ -234,7 +236,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Text(
                         icecreamdata[index].title,
                         style: TextStyle(
-                            fontSize: 16
+                          fontSize: 16,
                         ),
                       ),
                     ),
@@ -242,7 +244,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Icon(
                   Icons.arrow_forward_ios,
-                )
+                ),
               ],
             ),
           ),
@@ -250,6 +252,7 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     );
   }
+
   _listWidgetCake() {
     return ListView.builder(
       itemCount: cakedata.length,
@@ -289,7 +292,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Text(
                         cakedata[index].title,
                         style: TextStyle(
-                            fontSize: 16
+                          fontSize: 16,
                         ),
                       ),
                     ),
@@ -297,7 +300,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Icon(
                   Icons.arrow_forward_ios,
-                )
+                ),
               ],
             ),
           ),
