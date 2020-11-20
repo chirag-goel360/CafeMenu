@@ -8,10 +8,10 @@ class FastFoodDataModel{
 
   FastFoodDataModel(
       this.image,
-      this.title, 
-      this.pricesmall, 
-      this.pricemedium, 
-      this.pricelarge, 
+      this.title,
+      this.pricesmall,
+      this.pricemedium,
+      this.pricelarge,
       this.information,
       );
 }

@@ -9,8 +9,8 @@ class CakeDataModel{
   CakeDataModel(
       this.image,
       this.title,
-      this.pricesmall, 
-      this.pricemedium, 
+      this.pricesmall,
+      this.pricemedium,
       this.pricelarge,
       this.information,
       );

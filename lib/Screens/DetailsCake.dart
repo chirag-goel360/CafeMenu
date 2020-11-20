@@ -23,7 +23,7 @@ class _DetailPageCakeState extends State<DetailPageCake> {
     priceofselected = widget.pricesmall;
     super.initState();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
