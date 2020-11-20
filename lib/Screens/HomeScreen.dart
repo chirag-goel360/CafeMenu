@@ -15,29 +15,29 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<CoffeeDataModel> coffeedata = [
-    CoffeeDataModel("assets/Coffee/Con panna.jpg", "Con Panna",300,"The Espresso con Panna means espresso with cream in Italian. Before baristas everywhere were putting whipped cream on lattes, Espresso con Panna was served in Europe with real whipped cream on an espresso shot in a demitasse. This drink is also popular in France and Budapest. We would recommend this drink for quite times and a good book. This simple Espresso Con Panna recipe will add some sweetness and energy to your day. Enjoy this italian-inspired drink on a break or weekend."),
-    CoffeeDataModel("assets/Coffee/Flat white.jpg","Flat White",200,"A flat white is an espresso drink made with a shot of espresso and two shots of steamed milk. It takes a little bit of skill to prepare, but once you've mastered this recipe, it's easy to make flat white espresso drinks again and again."),
-    CoffeeDataModel("assets/Coffee/Mocha.jpg","Mocha",250,"All you need is a cup of hot coffee to cheer up your mood. Be it a date or some casual outing with friends, a steaming cup of coffee is a must-have. Mocha or mochaccino is a popular coffee type which is loved by people of all age groups. It is named after the city of Mocha in Yemen. It has a chocolate flavour which makes it so delicious."),
-    CoffeeDataModel("assets/Coffee/Vienna.jpg","Vienna",280,"Vienna Coffee is the name of a popular traditional cream-based coffee beverage. It is made by preparing two shots of strong black espresso in a standard sized coffee cup and infusing the coffee with whipped cream (as a replacement for milk and sugar) until the cup is full. Then the cream is twirled and optionally topped off with chocolate sprinklings. The coffee is drunk through the creamy top."),
+    CoffeeDataModel("assets/Coffee/Con panna.jpg", "Con Panna",300,330,360,"The Espresso con Panna means espresso with cream in Italian. Before baristas everywhere were putting whipped cream on lattes, Espresso con Panna was served in Europe with real whipped cream on an espresso shot in a demitasse. This drink is also popular in France and Budapest. We would recommend this drink for quite times and a good book. This simple Espresso Con Panna recipe will add some sweetness and energy to your day. Enjoy this italian-inspired drink on a break or weekend."),
+    CoffeeDataModel("assets/Coffee/Flat white.jpg","Flat White",200,240,260,"A flat white is an espresso drink made with a shot of espresso and two shots of steamed milk. It takes a little bit of skill to prepare, but once you've mastered this recipe, it's easy to make flat white espresso drinks again and again."),
+    CoffeeDataModel("assets/Coffee/Mocha.jpg","Mocha",250,270,285,"All you need is a cup of hot coffee to cheer up your mood. Be it a date or some casual outing with friends, a steaming cup of coffee is a must-have. Mocha or mochaccino is a popular coffee type which is loved by people of all age groups. It is named after the city of Mocha in Yemen. It has a chocolate flavour which makes it so delicious."),
+    CoffeeDataModel("assets/Coffee/Vienna.jpg","Vienna",280,300,320,"Vienna Coffee is the name of a popular traditional cream-based coffee beverage. It is made by preparing two shots of strong black espresso in a standard sized coffee cup and infusing the coffee with whipped cream (as a replacement for milk and sugar) until the cup is full. Then the cream is twirled and optionally topped off with chocolate sprinklings. The coffee is drunk through the creamy top."),
   ];
   final List<CakeDataModel> cakedata = [
-    CakeDataModel("assets/Cake/BlueBerry.jpg","Blue Berry CupCake",50,"Bursting with fresh blueberries with a tender crumb and sparkling sugar crust, these really are the best blueberry muffins.These blueberry cupcakes are breakfast for dessert. Fresh blueberries are mixed into vanilla cake -- rather than muffin -- batter, which is then topped with cinnamon streusel and swirls of blueberry-cream cheese icing."),
-    CakeDataModel("assets/Cake/Chocolate.jpg","Chocolate CupCake",50,"These Moist Chocolate Cupcakes are completely from scratch & full of chocolate flavor! The cupcake is so moist, it melts in your mouth and the frosting is made with real melted chocolate for a silky smooth, super chocolatey frosting you won’t want to stop eating!"),
-    CakeDataModel("assets/Cake/ChocolateSwiss.jpg","Chocolate Swiss Roll",70,"This Chocolate Swiss Roll is a rich, chocolaty and decadent dessert, a rewarding treat for  chocolate lovers. A chocolate sponge cake is filled with a chocolate mousse filling and drizzled with chocolate ganache on top. It is simply heavenly delicious."),
-    CakeDataModel("assets/Cake/Mango.jpg","Mango CupCake",50,"These amazing cupcakes combine the flavors of mango and coconut for a tropical flair. The buttercream frosting is made with a fresh mango reduction for a superb taste of mango. The vanilla cupcake is moist, rich, and buttery with a hint of coconut."),
-    CakeDataModel("assets/Cake/Strawberry.jpg","Strawberry CupCake",50,"These Strawberry Cupcakes are made with chunks of fresh strawberries in the cake batter and are topped with a luscious pink Strawberry Buttercream Frosting. These cupcakes are just bursting with flavor and would go down a treat at any celebration!"),
-    CakeDataModel("assets/Cake/StrawberrySwiss.jpg","Strawberry Swiss Roll",70,"Roll into strawberry season with this gorgeous strawberry cake roll: a delicate almond sponge cake decorated with a cute strawberry design and filled with strawberry whipped cream. The Japanese are really on to something with these patterned cake rolls. They are as impressive to behold as they are delicious to eat, and are arguably much easier and less time-intensive than fancy frosted layer cakes."),
-    CakeDataModel("assets/Cake/VanillaChocoChip.jpg","Vanilla Chocolate Chip CupCake",60,"A Vanilla Cupcake with chocochips on the top is heaven for chocolate lovers. These cakes are made with lots of love and care for  our Customers."),
+    CakeDataModel("assets/Cake/BlueBerry.jpg","Blue Berry CupCake",50,65,75,"Bursting with fresh blueberries with a tender crumb and sparkling sugar crust, these really are the best blueberry muffins.These blueberry cupcakes are breakfast for dessert. Fresh blueberries are mixed into vanilla cake -- rather than muffin -- batter, which is then topped with cinnamon streusel and swirls of blueberry-cream cheese icing."),
+    CakeDataModel("assets/Cake/Chocolate.jpg","Chocolate CupCake",50,65,75,"These Moist Chocolate Cupcakes are completely from scratch & full of chocolate flavor! The cupcake is so moist, it melts in your mouth and the frosting is made with real melted chocolate for a silky smooth, super chocolatey frosting you won’t want to stop eating!"),
+    CakeDataModel("assets/Cake/ChocolateSwiss.jpg","Chocolate Swiss Roll",70,80,90,"This Chocolate Swiss Roll is a rich, chocolaty and decadent dessert, a rewarding treat for  chocolate lovers. A chocolate sponge cake is filled with a chocolate mousse filling and drizzled with chocolate ganache on top. It is simply heavenly delicious."),
+    CakeDataModel("assets/Cake/Mango.jpg","Mango CupCake",50,70,80,"These amazing cupcakes combine the flavors of mango and coconut for a tropical flair. The buttercream frosting is made with a fresh mango reduction for a superb taste of mango. The vanilla cupcake is moist, rich, and buttery with a hint of coconut."),
+    CakeDataModel("assets/Cake/Strawberry.jpg","Strawberry CupCake",50,60,70,"These Strawberry Cupcakes are made with chunks of fresh strawberries in the cake batter and are topped with a luscious pink Strawberry Buttercream Frosting. These cupcakes are just bursting with flavor and would go down a treat at any celebration!"),
+    CakeDataModel("assets/Cake/StrawberrySwiss.jpg","Strawberry Swiss Roll",70,85,95,"Roll into strawberry season with this gorgeous strawberry cake roll: a delicate almond sponge cake decorated with a cute strawberry design and filled with strawberry whipped cream. The Japanese are really on to something with these patterned cake rolls. They are as impressive to behold as they are delicious to eat, and are arguably much easier and less time-intensive than fancy frosted layer cakes."),
+    CakeDataModel("assets/Cake/VanillaChocoChip.jpg","Vanilla Chocolate Chip CupCake",60,70,85,"A Vanilla Cupcake with chocochips on the top is heaven for chocolate lovers. These cakes are made with lots of love and care for  our Customers."),
   ];
   final List<IceCreamDataModel> icecreamdata = [
-    IceCreamDataModel("assets/IceCream/chocolate.jpg","Chocolate Ice-Cream",30,"This chocolate ice cream is irresistibly creamy and made with two forms of chocolate for a deep rich flavor. It’s not overly sweet, and is just as delicious (maybe even more-so) than your favorite ice cream."),
-    IceCreamDataModel("assets/IceCream/doublescoopchocolate.jpg","Double Chocolate Scoop",70,""),
-    IceCreamDataModel("assets/IceCream/fruityscoop.jpg","Fruity Scoop",80,""),
-    IceCreamDataModel("assets/IceCream/singlescoopchocolate.jpg","Single Chocolate Scoop",50,""),
-    IceCreamDataModel("assets/IceCream/strawberry.jpg","Strawberry Ice-Cream",30,""),
-    IceCreamDataModel("assets/IceCream/supersunday.jpg","Super Special Sunday",90,""),
-    IceCreamDataModel("assets/IceCream/vanilla.jpg","Vanilla Ice-Cream",25,""),
-    IceCreamDataModel("assets/IceCream/vanillascoop.jpg","Vanilla Scoop",75,""),
+    IceCreamDataModel("assets/IceCream/chocolate.jpg","Chocolate Ice-Cream",30,40,50,"This chocolate ice cream is irresistibly creamy and made with two forms of chocolate for a deep rich flavor. It’s not overly sweet, and is just as delicious (maybe even more-so) than your favorite ice cream."),
+    IceCreamDataModel("assets/IceCream/doublescoopchocolate.jpg","Double Chocolate Scoop",70,80,90,""),
+    IceCreamDataModel("assets/IceCream/fruityscoop.jpg","Fruity Scoop",80,90,95,""),
+    IceCreamDataModel("assets/IceCream/singlescoopchocolate.jpg","Single Chocolate Scoop",50,65,80,""),
+    IceCreamDataModel("assets/IceCream/strawberry.jpg","Strawberry Ice-Cream",30,40,50,""),
+    IceCreamDataModel("assets/IceCream/supersunday.jpg","Super Special Sunday",90,110,120,""),
+    IceCreamDataModel("assets/IceCream/vanilla.jpg","Vanilla Ice-Cream",25,35,45,""),
+    IceCreamDataModel("assets/IceCream/vanillascoop.jpg","Vanilla Scoop",75,90,100,""),
   ];
   int selectedIndex = 0;
 
@@ -150,7 +150,9 @@ class _HomeScreenState extends State<HomeScreen> {
             Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageCoffee(
               title: coffeedata[index].title,
               img: coffeedata[index].image,
-              price: coffeedata[index].price,
+              pricesmall: coffeedata[index].pricesmall,
+              pricemedium: coffeedata[index].pricemedium,
+              pricelarge: coffeedata[index].pricelarge,
               info: coffeedata[index].information,
             ),
             ),
@@ -206,7 +208,9 @@ class _HomeScreenState extends State<HomeScreen> {
             Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageIceCream(
               title: icecreamdata[index].title,
               img: icecreamdata[index].image,
-              price: icecreamdata[index].price,
+              pricesmall: icecreamdata[index].pricesmall,
+              pricemedium: icecreamdata[index].pricemedium,
+              pricelarge: icecreamdata[index].pricelarge,
               info: icecreamdata[index].information,
             ),
             ),
@@ -262,7 +266,9 @@ class _HomeScreenState extends State<HomeScreen> {
             Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageCake(
               title: cakedata[index].title,
               img: cakedata[index].image,
-              price: cakedata[index].price,
+              pricesmall: cakedata[index].pricesmall,
+              pricemedium: cakedata[index].pricemedium,
+              pricelarge: cakedata[index].pricelarge,
               info: cakedata[index].information,
             ),
             ),

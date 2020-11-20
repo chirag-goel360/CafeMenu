@@ -1,13 +1,17 @@
 class CakeDataModel{
   final String image;
   final String title;
-  final int price;
+  final int pricesmall;
+  final int pricemedium;
+  final int pricelarge;
   final String information;
 
   CakeDataModel(
       this.image,
       this.title,
-      this.price,
+      this.pricesmall, 
+      this.pricemedium, 
+      this.pricelarge,
       this.information,
       );
 }

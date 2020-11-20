@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 class DetailPageIceCream extends StatefulWidget {
   final String img;
   final String title;
-  final int price;
+  final int pricesmall;
+  final int pricemedium;
+  final int pricelarge;
   final String info;
-  const DetailPageIceCream({Key key, this.img, this.title, this.price, this.info}) : super(key: key);
+  const DetailPageIceCream({Key key, this.img, this.title, this.pricesmall, this.pricemedium, this.pricelarge, this.info,}) : super(key: key);
 
   @override
   _DetailPageIceCreamState createState() => _DetailPageIceCreamState();
@@ -14,6 +16,13 @@ class DetailPageIceCream extends StatefulWidget {
 class _DetailPageIceCreamState extends State<DetailPageIceCream> {
   int count = 0;
   int _selectedSize = 0;
+  int priceofselected;
+
+  @override
+  void initState() {
+    priceofselected = widget.pricesmall;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -85,8 +94,11 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
                       onTap: () {
                         Navigator.pop(context);
                       },
-                      child: Icon(
-                        Icons.arrow_back_ios,
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Icon(
+                          Icons.arrow_back_ios,
+                        ),
                       ),
                     ),
                   ],
@@ -191,7 +203,7 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
                 ),
               ),
               Text(
-                widget.price.toString(),
+                priceofselected.toString(),
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.black87,
@@ -233,6 +245,7 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
           onTap: () {
             setState(() {
               _selectedSize = 0;
+              priceofselected = widget.pricesmall;
             });
           },
           child: Container(
@@ -259,6 +272,7 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
           onTap: () {
             setState(() {
               _selectedSize = 1;
+              priceofselected = widget.pricemedium;
             });
           },
           child: Container(
@@ -285,6 +299,7 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
           onTap: () {
             setState(() {
               _selectedSize = 2;
+              priceofselected = widget.pricelarge;
             });
           },
           child: Container(
