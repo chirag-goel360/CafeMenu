@@ -27,7 +27,7 @@ class _DetailPageIceCreamState extends State<DetailPageIceCream> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.deepPurple.shade100,
       body: Column(
         children: <Widget>[
           _headerWidget(),

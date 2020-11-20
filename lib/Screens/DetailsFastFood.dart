@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class DetailPageCoffee extends StatefulWidget {
+class DetailPageFastFood extends StatefulWidget {
   final String img;
   final String title;
   final int pricesmall;
   final int pricemedium;
   final int pricelarge;
   final String info;
-  const DetailPageCoffee({Key key, this.img, this.title, this.pricesmall, this.pricemedium, this.pricelarge, this.info,}) : super(key: key);
+  const DetailPageFastFood({Key key, this.img, this.title, this.pricesmall, this.pricemedium, this.pricelarge, this.info,}) : super(key: key);
 
   @override
-  _DetailPageCoffeeState createState() => _DetailPageCoffeeState();
+  _DetailPageFastFoodState createState() => _DetailPageFastFoodState();
 }
 
-class _DetailPageCoffeeState extends State<DetailPageCoffee> {
+class _DetailPageFastFoodState extends State<DetailPageFastFood> {
   int count = 0;
   int _selectedSize = 0;
   int priceofselected;
@@ -27,7 +27,7 @@ class _DetailPageCoffeeState extends State<DetailPageCoffee> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red.shade100,
+      backgroundColor: Colors.blueAccent.shade100,
       body: Column(
         children: <Widget>[
           _headerWidget(),
