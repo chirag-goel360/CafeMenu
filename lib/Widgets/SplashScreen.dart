@@ -9,18 +9,19 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   @override
-  void initState()
-  {
+  void initState() {
     super.initState();
     Future.delayed(
       Duration(
         seconds: 5,
       ),
-          (){
-        Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => HomeScreen(),
-        ),
+      () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HomeScreen(),
+          ),
         );
       },
     );
@@ -48,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   height: 180,
                   child: FlareActor(
                     'assets/CoffeMachine.flr',
-                    animation:"loading",
+                    animation: "loading",
                   ),
                 ),
                 Container(

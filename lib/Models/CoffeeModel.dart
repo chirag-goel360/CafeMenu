@@ -1,4 +1,4 @@
-class CoffeeDataModel{
+class CoffeeDataModel {
   final String image;
   final String title;
   final int pricesmall;
@@ -7,11 +7,11 @@ class CoffeeDataModel{
   final String information;
 
   CoffeeDataModel(
-      this.image,
-      this.title,
-      this.pricesmall,
-      this.pricemedium,
-      this.pricelarge,
-      this.information,
-      );
+    this.image,
+    this.title,
+    this.pricesmall,
+    this.pricemedium,
+    this.pricelarge,
+    this.information,
+  );
 }

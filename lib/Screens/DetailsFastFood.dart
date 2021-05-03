@@ -7,7 +7,15 @@ class DetailPageFastFood extends StatefulWidget {
   final int pricemedium;
   final int pricelarge;
   final String info;
-  const DetailPageFastFood({Key key, this.img, this.title, this.pricesmall, this.pricemedium, this.pricelarge, this.info,}) : super(key: key);
+  const DetailPageFastFood({
+    Key key,
+    this.img,
+    this.title,
+    this.pricesmall,
+    this.pricemedium,
+    this.pricelarge,
+    this.info,
+  }) : super(key: key);
 
   @override
   _DetailPageFastFoodState createState() => _DetailPageFastFoodState();
@@ -254,7 +262,7 @@ class _DetailPageFastFoodState extends State<DetailPageFastFood> {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: _selectedSize == 0 ? Colors.red: Colors.transparent,
+                  color: _selectedSize == 0 ? Colors.red : Colors.transparent,
                   width: 4,
                 ),
               ),
@@ -281,7 +289,7 @@ class _DetailPageFastFoodState extends State<DetailPageFastFood> {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: _selectedSize == 1 ? Colors.red: Colors.transparent,
+                  color: _selectedSize == 1 ? Colors.red : Colors.transparent,
                   width: 4,
                 ),
               ),
@@ -308,7 +316,7 @@ class _DetailPageFastFoodState extends State<DetailPageFastFood> {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: _selectedSize == 2 ? Colors.red: Colors.transparent,
+                  color: _selectedSize == 2 ? Colors.red : Colors.transparent,
                   width: 4,
                 ),
               ),

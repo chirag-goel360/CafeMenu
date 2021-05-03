@@ -1,4 +1,4 @@
-class CakeDataModel{
+class CakeDataModel {
   final String image;
   final String title;
   final int pricesmall;
@@ -7,11 +7,11 @@ class CakeDataModel{
   final String information;
 
   CakeDataModel(
-      this.image,
-      this.title,
-      this.pricesmall,
-      this.pricemedium,
-      this.pricelarge,
-      this.information,
-      );
+    this.image,
+    this.title,
+    this.pricesmall,
+    this.pricemedium,
+    this.pricelarge,
+    this.information,
+  );
 }

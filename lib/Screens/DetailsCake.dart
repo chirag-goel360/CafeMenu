@@ -7,7 +7,15 @@ class DetailPageCake extends StatefulWidget {
   final int pricemedium;
   final int pricelarge;
   final String info;
-  const DetailPageCake({Key key, this.img, this.title, this.pricesmall, this.pricemedium, this.pricelarge, this.info,}) : super(key: key);
+  const DetailPageCake({
+    Key key,
+    this.img,
+    this.title,
+    this.pricesmall,
+    this.pricemedium,
+    this.pricelarge,
+    this.info,
+  }) : super(key: key);
 
   @override
   _DetailPageCakeState createState() => _DetailPageCakeState();
@@ -254,7 +262,7 @@ class _DetailPageCakeState extends State<DetailPageCake> {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: _selectedSize == 0 ? Colors.red: Colors.transparent,
+                  color: _selectedSize == 0 ? Colors.red : Colors.transparent,
                   width: 4,
                 ),
               ),
@@ -281,7 +289,7 @@ class _DetailPageCakeState extends State<DetailPageCake> {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: _selectedSize == 1 ? Colors.red: Colors.transparent,
+                  color: _selectedSize == 1 ? Colors.red : Colors.transparent,
                   width: 4,
                 ),
               ),
@@ -308,7 +316,7 @@ class _DetailPageCakeState extends State<DetailPageCake> {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: _selectedSize == 2 ? Colors.red: Colors.transparent,
+                  color: _selectedSize == 2 ? Colors.red : Colors.transparent,
                   width: 4,
                 ),
               ),

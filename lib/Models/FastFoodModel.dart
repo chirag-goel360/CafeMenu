@@ -1,4 +1,4 @@
-class FastFoodDataModel{
+class FastFoodDataModel {
   final String image;
   final String title;
   final int pricesmall;
@@ -7,11 +7,11 @@ class FastFoodDataModel{
   final String information;
 
   FastFoodDataModel(
-      this.image,
-      this.title,
-      this.pricesmall,
-      this.pricemedium,
-      this.pricelarge,
-      this.information,
-      );
+    this.image,
+    this.title,
+    this.pricesmall,
+    this.pricemedium,
+    this.pricelarge,
+    this.information,
+  );
 }

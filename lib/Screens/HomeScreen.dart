@@ -16,51 +16,190 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<CoffeeDataModel> coffeedata = [
-    CoffeeDataModel("assets/Coffee/Con panna.jpg", "Con Panna",300,330,360,"The Espresso con Panna means espresso with cream in Italian. Before baristas everywhere were putting whipped cream on lattes, Espresso con Panna was served in Europe with real whipped cream on an espresso shot in a demitasse. This drink is also popular in France and Budapest. We would recommend this drink for quite times and a good book. This simple Espresso Con Panna recipe will add some sweetness and energy to your day. Enjoy this italian-inspired drink on a break or weekend."),
-    CoffeeDataModel("assets/Coffee/Flat white.jpg","Flat White",200,240,260,"A flat white is an espresso drink made with a shot of espresso and two shots of steamed milk. It takes a little bit of skill to prepare, but once you've mastered this recipe, it's easy to make flat white espresso drinks again and again."),
-    CoffeeDataModel("assets/Coffee/Mocha.jpg","Mocha",250,270,285,"All you need is a cup of hot coffee to cheer up your mood. Be it a date or some casual outing with friends, a steaming cup of coffee is a must-have. Mocha or mochaccino is a popular coffee type which is loved by people of all age groups. It is named after the city of Mocha in Yemen. It has a chocolate flavour which makes it so delicious."),
-    CoffeeDataModel("assets/Coffee/Vienna.jpg","Vienna",280,300,320,"Vienna Coffee is the name of a popular traditional cream-based coffee beverage. It is made by preparing two shots of strong black espresso in a standard sized coffee cup and infusing the coffee with whipped cream (as a replacement for milk and sugar) until the cup is full. Then the cream is twirled and optionally topped off with chocolate sprinklings. The coffee is drunk through the creamy top."),
+    CoffeeDataModel(
+      "assets/Coffee/Con panna.jpg",
+      "Con Panna",
+      300,
+      330,
+      360,
+      "The Espresso con Panna means espresso with cream in Italian. Before baristas everywhere were putting whipped cream on lattes, Espresso con Panna was served in Europe with real whipped cream on an espresso shot in a demitasse. This drink is also popular in France and Budapest. We would recommend this drink for quite times and a good book. This simple Espresso Con Panna recipe will add some sweetness and energy to your day. Enjoy this italian-inspired drink on a break or weekend.",
+    ),
+    CoffeeDataModel(
+      "assets/Coffee/Flat white.jpg",
+      "Flat White",
+      200,
+      240,
+      260,
+      "A flat white is an espresso drink made with a shot of espresso and two shots of steamed milk. It takes a little bit of skill to prepare, but once you've mastered this recipe, it's easy to make flat white espresso drinks again and again.",
+    ),
+    CoffeeDataModel(
+      "assets/Coffee/Mocha.jpg",
+      "Mocha",
+      250,
+      270,
+      285,
+      "All you need is a cup of hot coffee to cheer up your mood. Be it a date or some casual outing with friends, a steaming cup of coffee is a must-have. Mocha or mochaccino is a popular coffee type which is loved by people of all age groups. It is named after the city of Mocha in Yemen. It has a chocolate flavour which makes it so delicious.",
+    ),
+    CoffeeDataModel(
+      "assets/Coffee/Vienna.jpg",
+      "Vienna",
+      280,
+      300,
+      320,
+      "Vienna Coffee is the name of a popular traditional cream-based coffee beverage. It is made by preparing two shots of strong black espresso in a standard sized coffee cup and infusing the coffee with whipped cream (as a replacement for milk and sugar) until the cup is full. Then the cream is twirled and optionally topped off with chocolate sprinklings. The coffee is drunk through the creamy top.",
+    ),
   ];
   final List<CakeDataModel> cakedata = [
-    CakeDataModel("assets/Cake/BlueBerry.jpg","Blue Berry CupCake",50,65,75,"Bursting with fresh blueberries with a tender crumb and sparkling sugar crust, these really are the best blueberry muffins.These blueberry cupcakes are breakfast for dessert. Fresh blueberries are mixed into vanilla cake -- rather than muffin -- batter, which is then topped with cinnamon streusel and swirls of blueberry-cream cheese icing."),
-    CakeDataModel("assets/Cake/Chocolate.jpg","Chocolate CupCake",50,65,75,"These Moist Chocolate Cupcakes are completely from scratch & full of chocolate flavor! The cupcake is so moist, it melts in your mouth and the frosting is made with real melted chocolate for a silky smooth, super chocolatey frosting you won’t want to stop eating!"),
-    CakeDataModel("assets/Cake/ChocolateSwiss.jpg","Chocolate Swiss Roll",70,80,90,"This Chocolate Swiss Roll is a rich, chocolaty and decadent dessert, a rewarding treat for  chocolate lovers. A chocolate sponge cake is filled with a chocolate mousse filling and drizzled with chocolate ganache on top. It is simply heavenly delicious."),
-    CakeDataModel("assets/Cake/Mango.jpg","Mango CupCake",50,70,80,"These amazing cupcakes combine the flavors of mango and coconut for a tropical flair. The buttercream frosting is made with a fresh mango reduction for a superb taste of mango. The vanilla cupcake is moist, rich, and buttery with a hint of coconut."),
-    CakeDataModel("assets/Cake/Strawberry.jpg","Strawberry CupCake",50,60,70,"These Strawberry Cupcakes are made with chunks of fresh strawberries in the cake batter and are topped with a luscious pink Strawberry Buttercream Frosting. These cupcakes are just bursting with flavor and would go down a treat at any celebration!"),
-    CakeDataModel("assets/Cake/StrawberrySwiss.jpg","Strawberry Swiss Roll",70,85,95,"Roll into strawberry season with this gorgeous strawberry cake roll: a delicate almond sponge cake decorated with a cute strawberry design and filled with strawberry whipped cream. The Japanese are really on to something with these patterned cake rolls. They are as impressive to behold as they are delicious to eat, and are arguably much easier and less time-intensive than fancy frosted layer cakes."),
-    CakeDataModel("assets/Cake/VanillaChocoChip.jpg","Vanilla Chocolate Chip CupCake",60,70,85,"A Vanilla Cupcake with chocochips on the top is heaven for chocolate lovers. These cakes are made with lots of love and care for  our Customers."),
+    CakeDataModel(
+      "assets/Cake/BlueBerry.jpg",
+      "Blue Berry CupCake",
+      50,
+      65,
+      75,
+      "Bursting with fresh blueberries with a tender crumb and sparkling sugar crust, these really are the best blueberry muffins.These blueberry cupcakes are breakfast for dessert. Fresh blueberries are mixed into vanilla cake -- rather than muffin -- batter, which is then topped with cinnamon streusel and swirls of blueberry-cream cheese icing.",
+    ),
+    CakeDataModel(
+      "assets/Cake/Chocolate.jpg",
+      "Chocolate CupCake",
+      50,
+      65,
+      75,
+      "These Moist Chocolate Cupcakes are completely from scratch & full of chocolate flavor! The cupcake is so moist, it melts in your mouth and the frosting is made with real melted chocolate for a silky smooth, super chocolatey frosting you won’t want to stop eating!",
+    ),
+    CakeDataModel(
+      "assets/Cake/ChocolateSwiss.jpg",
+      "Chocolate Swiss Roll",
+      70,
+      80,
+      90,
+      "This Chocolate Swiss Roll is a rich, chocolaty and decadent dessert, a rewarding treat for  chocolate lovers. A chocolate sponge cake is filled with a chocolate mousse filling and drizzled with chocolate ganache on top. It is simply heavenly delicious.",
+    ),
+    CakeDataModel(
+      "assets/Cake/Mango.jpg",
+      "Mango CupCake",
+      50,
+      70,
+      80,
+      "These amazing cupcakes combine the flavors of mango and coconut for a tropical flair. The buttercream frosting is made with a fresh mango reduction for a superb taste of mango. The vanilla cupcake is moist, rich, and buttery with a hint of coconut.",
+    ),
+    CakeDataModel(
+      "assets/Cake/Strawberry.jpg",
+      "Strawberry CupCake",
+      50,
+      60,
+      70,
+      "These Strawberry Cupcakes are made with chunks of fresh strawberries in the cake batter and are topped with a luscious pink Strawberry Buttercream Frosting. These cupcakes are just bursting with flavor and would go down a treat at any celebration!",
+    ),
+    CakeDataModel(
+      "assets/Cake/StrawberrySwiss.jpg",
+      "Strawberry Swiss Roll",
+      70,
+      85,
+      95,
+      "Roll into strawberry season with this gorgeous strawberry cake roll: a delicate almond sponge cake decorated with a cute strawberry design and filled with strawberry whipped cream. The Japanese are really on to something with these patterned cake rolls. They are as impressive to behold as they are delicious to eat, and are arguably much easier and less time-intensive than fancy frosted layer cakes.",
+    ),
+    CakeDataModel(
+      "assets/Cake/VanillaChocoChip.jpg",
+      "Vanilla Chocolate Chip CupCake",
+      60,
+      70,
+      85,
+      "A Vanilla Cupcake with chocochips on the top is heaven for chocolate lovers. These cakes are made with lots of love and care for  our Customers.",
+    ),
   ];
   final List<FastFoodDataModel> fastfooddata = [
-    FastFoodDataModel("assets/FastFood/noodles.jpg","Noodles",45,65,75,"Originated form China but now flurished in India with new taste.Everyone loves noodles. Hot and spicy with a sweet coffee make it more awesome. Have a try at it."),
-    FastFoodDataModel("assets/FastFood/tacos.jpg","Tacos",55,65,75,"Traditional Mexican beef tacos are made with marinated sliced or shredded beef on soft corn tortillas. Just throw the kidney beans, crumbled cottage cheese and your favorite veggies, drizzled with lime, sour cream and a green tomatillo salsa. Wrap up this scrumptious filling in warm taco shells and you are ready with a satisfying meal. Not easy to make it delicious as it is mentioned. Try it you will definately like it."),
+    FastFoodDataModel(
+      "assets/FastFood/noodles.jpg",
+      "Noodles",
+      45,
+      65,
+      75,
+      "Originated form China but now flurished in India with new taste.Everyone loves noodles. Hot and spicy with a sweet coffee make it more awesome. Have a try at it.",
+    ),
+    FastFoodDataModel(
+      "assets/FastFood/tacos.jpg",
+      "Tacos",
+      55,
+      65,
+      75,
+      "Traditional Mexican beef tacos are made with marinated sliced or shredded beef on soft corn tortillas. Just throw the kidney beans, crumbled cottage cheese and your favorite veggies, drizzled with lime, sour cream and a green tomatillo salsa. Wrap up this scrumptious filling in warm taco shells and you are ready with a satisfying meal. Not easy to make it delicious as it is mentioned. Try it you will definately like it.",
+    ),
   ];
   final List<IceCreamDataModel> icecreamdata = [
-    IceCreamDataModel("assets/IceCream/chocolate.jpg","Chocolate Ice-Cream",30,40,50,"This chocolate ice cream is irresistibly creamy and made with two forms of chocolate for a deep rich flavor. It’s not overly sweet, and is just as delicious (maybe even more-so) than your favorite ice cream."),
-    IceCreamDataModel("assets/IceCream/doublescoopchocolate.jpg","Double Chocolate Scoop",70,80,90,"I love dessert. All kinds. But there's something about ice cream that makes me happy. I am drawn to its simplicity. I am perplexed by the endless supply of constantly growing flavor options. And I am always in the mood for sprinkles and a sugar cone with lots pf choco syrup over it."),
-    IceCreamDataModel("assets/IceCream/fruityscoop.jpg","Fruity Scoop",80,90,95,"If you have never known the bliss of homemade fresh fruit ice cream and sorbet, we need to correct that right now. These recipes all feature summer's freshest fruits — some are made with dairy and some aren't, and some need an ice cream machine while others don't. It all adds up to a summer's worth of homemade ice-cold refreshment that lets you store-bought any day."),
-    IceCreamDataModel("assets/IceCream/singlescoopchocolate.jpg","Single Chocolate Scoop",50,65,80,"If you have never known the bliss of homemade fresh fruit ice cream and sorbet, we need to correct that right now. These recipes all feature summer's freshest fruits — some are made with dairy and some aren't, and some need an ice cream machine while others don't. It all adds up to a summer's worth of homemade ice-cold refreshment that beats store-bought any day.If you have never known the bliss of homemade fresh fruit ice cream and sorbet, we need to correct that right now. These recipes all feature summer's freshest fruits — some are made with dairy and some aren't, and some need an ice cream machine while others don't. It all adds up to a summer's worth of homemade ice-cold refreshment that beats store-bought any day."),
-    IceCreamDataModel("assets/IceCream/strawberry.jpg","Strawberry Ice-Cream",30,40,50,"This really is The Best Strawberry Ice Cream Recipe around. It's super creamy and has tons of fresh strawberry flavor.You should be able to smell them from across the room, they should taste as sweet as candy, and they should be pink (not white) when you cut them in half."),
-    IceCreamDataModel("assets/IceCream/supersunday.jpg","Super Special Sunday",90,110,120,"Ice cream and camping don't usually bunk together, but this trail mix-studded frozen concoction is the exception. Riddled with nuts, chocolate candies and raisins, this cone is equipped to hit the trails (at least in spirit).Trrrrry me I am sweet like your baby."),
-    IceCreamDataModel("assets/IceCream/vanilla.jpg","Vanilla Ice-Cream",25,35,45,"We don't want to brag, but as far as vanilla ice cream recipes go, this one is the best. And with only four ingredients, it just might be the easiest, too. But we cant reveal our recipy"),
+    IceCreamDataModel(
+      "assets/IceCream/chocolate.jpg",
+      "Chocolate Ice-Cream",
+      30,
+      40,
+      50,
+      "This chocolate ice cream is irresistibly creamy and made with two forms of chocolate for a deep rich flavor. It’s not overly sweet, and is just as delicious (maybe even more-so) than your favorite ice cream.",
+    ),
+    IceCreamDataModel(
+      "assets/IceCream/doublescoopchocolate.jpg",
+      "Double Chocolate Scoop",
+      70,
+      80,
+      90,
+      "I love dessert. All kinds. But there's something about ice cream that makes me happy. I am drawn to its simplicity. I am perplexed by the endless supply of constantly growing flavor options. And I am always in the mood for sprinkles and a sugar cone with lots pf choco syrup over it.",
+    ),
+    IceCreamDataModel(
+      "assets/IceCream/fruityscoop.jpg",
+      "Fruity Scoop",
+      80,
+      90,
+      95,
+      "If you have never known the bliss of homemade fresh fruit ice cream and sorbet, we need to correct that right now. These recipes all feature summer's freshest fruits — some are made with dairy and some aren't, and some need an ice cream machine while others don't. It all adds up to a summer's worth of homemade ice-cold refreshment that lets you store-bought any day.",
+    ),
+    IceCreamDataModel(
+      "assets/IceCream/singlescoopchocolate.jpg",
+      "Single Chocolate Scoop",
+      50,
+      65,
+      80,
+      "If you have never known the bliss of homemade fresh fruit ice cream and sorbet, we need to correct that right now. These recipes all feature summer's freshest fruits — some are made with dairy and some aren't, and some need an ice cream machine while others don't. It all adds up to a summer's worth of homemade ice-cold refreshment that beats store-bought any day.If you have never known the bliss of homemade fresh fruit ice cream and sorbet, we need to correct that right now. These recipes all feature summer's freshest fruits — some are made with dairy and some aren't, and some need an ice cream machine while others don't. It all adds up to a summer's worth of homemade ice-cold refreshment that beats store-bought any day.",
+    ),
+    IceCreamDataModel(
+      "assets/IceCream/strawberry.jpg",
+      "Strawberry Ice-Cream",
+      30,
+      40,
+      50,
+      "This really is The Best Strawberry Ice Cream Recipe around. It's super creamy and has tons of fresh strawberry flavor.You should be able to smell them from across the room, they should taste as sweet as candy, and they should be pink (not white) when you cut them in half.",
+    ),
+    IceCreamDataModel(
+      "assets/IceCream/supersunday.jpg",
+      "Super Special Sunday",
+      90,
+      110,
+      120,
+      "Ice cream and camping don't usually bunk together, but this trail mix-studded frozen concoction is the exception. Riddled with nuts, chocolate candies and raisins, this cone is equipped to hit the trails (at least in spirit).Trrrrry me I am sweet like your baby.",
+    ),
+    IceCreamDataModel(
+      "assets/IceCream/vanilla.jpg",
+      "Vanilla Ice-Cream",
+      25,
+      35,
+      45,
+      "We don't want to brag, but as far as vanilla ice cream recipes go, this one is the best. And with only four ingredients, it just might be the easiest, too. But we cant reveal our recipy",
+    ),
   ];
   int selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     Widget child;
-    switch(selectedIndex)
-    {
+    switch (selectedIndex) {
       case 0:
         child = _listWidgetCoffee();
         break;
       case 1:
-        child =  _listWidgetCake();
+        child = _listWidgetCake();
         break;
       case 2:
-        child =  _listWidgetIceCream();
+        child = _listWidgetIceCream();
         break;
       case 3:
-        child =  _listWidgetFastFood();
+        child = _listWidgetFastFood();
         break;
     }
     return Scaffold(
@@ -76,12 +215,12 @@ class _HomeScreenState extends State<HomeScreen> {
           FlipBarItem(
             icon: FaIcon(
               FontAwesomeIcons.coffee,
-              color: Color.fromRGBO(122,81,57,0.8),
+              color: Color.fromRGBO(122, 81, 57, 0.8),
             ),
             text: Text(
               "Coffee",
               style: TextStyle(
-                color: Color.fromRGBO(122,83,57,1),
+                color: Color.fromRGBO(122, 83, 57, 1),
                 fontSize: 14,
               ),
             ),
@@ -91,12 +230,12 @@ class _HomeScreenState extends State<HomeScreen> {
           FlipBarItem(
             icon: FaIcon(
               FontAwesomeIcons.birthdayCake,
-              color: Color.fromRGBO(247,142,183,0.8),
+              color: Color.fromRGBO(247, 142, 183, 0.8),
             ),
             text: Text(
               "Cake",
               style: TextStyle(
-                color: Color.fromRGBO(247,142,183,1),
+                color: Color.fromRGBO(247, 142, 183, 1),
                 fontSize: 14,
               ),
             ),
@@ -106,12 +245,12 @@ class _HomeScreenState extends State<HomeScreen> {
           FlipBarItem(
             icon: Icon(
               Icons.kitchen,
-              color: Color.fromRGBO(197,26,28,0.8),
+              color: Color.fromRGBO(197, 26, 28, 0.8),
             ),
             text: Text(
               "Ice-Cream",
               style: TextStyle(
-                color: Color.fromRGBO(197,26,28,1),
+                color: Color.fromRGBO(197, 26, 28, 1),
                 fontSize: 14,
               ),
             ),
@@ -121,12 +260,12 @@ class _HomeScreenState extends State<HomeScreen> {
           FlipBarItem(
             icon: Icon(
               Icons.fastfood,
-              color: Color.fromRGBO(16,203,28,0.8),
+              color: Color.fromRGBO(16, 203, 28, 0.8),
             ),
             text: Text(
               "Fast Food",
               style: TextStyle(
-                color: Color.fromRGBO(16,203,28,1),
+                color: Color.fromRGBO(16, 203, 28, 1),
               ),
             ),
             frontColor: Colors.lightGreen.shade400,
@@ -148,18 +287,21 @@ class _HomeScreenState extends State<HomeScreen> {
   _listWidgetCoffee() {
     return ListView.builder(
       itemCount: coffeedata.length,
-      itemBuilder: (BuildContext context,int index) {
+      itemBuilder: (BuildContext context, int index) {
         return InkWell(
-          onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageCoffee(
-              title: coffeedata[index].title,
-              img: coffeedata[index].image,
-              pricesmall: coffeedata[index].pricesmall,
-              pricemedium: coffeedata[index].pricemedium,
-              pricelarge: coffeedata[index].pricelarge,
-              info: coffeedata[index].information,
-            ),
-            ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => DetailPageCoffee(
+                  title: coffeedata[index].title,
+                  img: coffeedata[index].image,
+                  pricesmall: coffeedata[index].pricesmall,
+                  pricemedium: coffeedata[index].pricemedium,
+                  pricelarge: coffeedata[index].pricelarge,
+                  info: coffeedata[index].information,
+                ),
+              ),
             );
           },
           child: Card(
@@ -206,18 +348,21 @@ class _HomeScreenState extends State<HomeScreen> {
   _listWidgetIceCream() {
     return ListView.builder(
       itemCount: icecreamdata.length,
-      itemBuilder: (BuildContext context,int index) {
+      itemBuilder: (BuildContext context, int index) {
         return InkWell(
-          onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageIceCream(
-              title: icecreamdata[index].title,
-              img: icecreamdata[index].image,
-              pricesmall: icecreamdata[index].pricesmall,
-              pricemedium: icecreamdata[index].pricemedium,
-              pricelarge: icecreamdata[index].pricelarge,
-              info: icecreamdata[index].information,
-            ),
-            ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => DetailPageIceCream(
+                  title: icecreamdata[index].title,
+                  img: icecreamdata[index].image,
+                  pricesmall: icecreamdata[index].pricesmall,
+                  pricemedium: icecreamdata[index].pricemedium,
+                  pricelarge: icecreamdata[index].pricelarge,
+                  info: icecreamdata[index].information,
+                ),
+              ),
             );
           },
           child: Card(
@@ -264,18 +409,21 @@ class _HomeScreenState extends State<HomeScreen> {
   _listWidgetFastFood() {
     return ListView.builder(
       itemCount: fastfooddata.length,
-      itemBuilder: (BuildContext context,int index) {
+      itemBuilder: (BuildContext context, int index) {
         return InkWell(
-          onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageIceCream(
-              title: fastfooddata[index].title,
-              img: fastfooddata[index].image,
-              pricesmall: fastfooddata[index].pricesmall,
-              pricemedium: fastfooddata[index].pricemedium,
-              pricelarge: fastfooddata[index].pricelarge,
-              info: fastfooddata[index].information,
-            ),
-            ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => DetailPageIceCream(
+                  title: fastfooddata[index].title,
+                  img: fastfooddata[index].image,
+                  pricesmall: fastfooddata[index].pricesmall,
+                  pricemedium: fastfooddata[index].pricemedium,
+                  pricelarge: fastfooddata[index].pricelarge,
+                  info: fastfooddata[index].information,
+                ),
+              ),
             );
           },
           child: Card(
@@ -322,18 +470,21 @@ class _HomeScreenState extends State<HomeScreen> {
   _listWidgetCake() {
     return ListView.builder(
       itemCount: cakedata.length,
-      itemBuilder: (BuildContext context,int index) {
+      itemBuilder: (BuildContext context, int index) {
         return InkWell(
-          onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailPageCake(
-              title: cakedata[index].title,
-              img: cakedata[index].image,
-              pricesmall: cakedata[index].pricesmall,
-              pricemedium: cakedata[index].pricemedium,
-              pricelarge: cakedata[index].pricelarge,
-              info: cakedata[index].information,
-            ),
-            ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => DetailPageCake(
+                  title: cakedata[index].title,
+                  img: cakedata[index].image,
+                  pricesmall: cakedata[index].pricesmall,
+                  pricemedium: cakedata[index].pricemedium,
+                  pricelarge: cakedata[index].pricelarge,
+                  info: cakedata[index].information,
+                ),
+              ),
             );
           },
           child: Card(

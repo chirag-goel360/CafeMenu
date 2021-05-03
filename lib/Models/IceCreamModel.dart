@@ -1,4 +1,4 @@
-class IceCreamDataModel{
+class IceCreamDataModel {
   final String image;
   final String title;
   final int pricesmall;
@@ -7,11 +7,11 @@ class IceCreamDataModel{
   final String information;
 
   IceCreamDataModel(
-      this.image,
-      this.title,
-      this.pricesmall,
-      this.pricemedium,
-      this.pricelarge,
-      this.information,
-      );
+    this.image,
+    this.title,
+    this.pricesmall,
+    this.pricemedium,
+    this.pricelarge,
+    this.information,
+  );
 }
